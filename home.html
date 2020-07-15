@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Biography</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+         img {
+           border-radius: 65%;
+         }
+</style>
+		
+    </head>
+    <body>
+        <div id="container2">
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="img_avatar.png" alt="Avatar" style="width: 150px;">
+                </div>
+                
+                
+
+                <ul>
+                    <li><a href="#" >Home </a></li>
+                    <li><a  href="about.html" target="_blank" tabindex="0" data-hook="footer-link" >About me  </a></li>
+                    <li><a href="contact.html" target="_blank" tabindex="0" data-hook="footer-link" >Contact</a></li>
+                    
+               </ul>
+            </div>
+            
+        <div class="t">
+            <h1>Tanusree Sen</h1>
+        </div>
+        <div id="colorlib-main">
+				<div class="overlay"></div>
+				<div class="js-fullheight d-flex justify-content-center align-items-center">
+					<div class="col-md-8 text text-center">
+						
+					</div>
+				</div>
+            </div>
+
+            <hr/>
+            <div class="q">
+           
+      
+      
+                <br>
+                         <p> “ “Once you replace negative thoughts with positive ones, you’ll start having positive results.”</p>
+                          
+      
+      <div>
+      <p><a href="link.html" class="btn-custom">Important Links </a></p>
+    </div>
+      </div>
+        </header>
+
+        <footer>
+            <div id="time">
+                </div>
+                <div id="location">
+                </div>
+        </footer>
+
+
+        <script>
+            var d = new Date();
+            document.getElementById("time").innerHTML = "Date Time:" + d;
+
+            var x = document.getElementById("location");
+            if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+
+  function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+            </script>
+            
+
+        </div>
+    </body>
+	
+</html>
